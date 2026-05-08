@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "jgs";
+  src: url("/jgs.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1rem;
+  font-family: "jgs", monospace;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+@media (min-width: 1920px) and (min-height: 1080px) {
+  html {
+    font-size: 36px;
+  }
+}
+
+html,
+body {
+  min-height: 100%;
+  background-color: #000;
+}
+
+body {
+  overflow: hidden;
+}
+
+.no_cursor,
+.no_cursor * {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  cursor: none;
+}
+
+.no_cursor body {
+  overflow: hidden;
+}
+
+pre {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  overflow: visible;
+  white-space: pre;
+}
+
+#wrapper {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
+}
+
+#entities,
+#ground,
+#decor,
+#infos {
+  color: #fff;
+}
